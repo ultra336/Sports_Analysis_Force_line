@@ -1,0 +1,217 @@
+{
+  "motion_id": "plank",
+  "motion_name": "平板支撑",
+  "version": "2.1.0",
+  "description": "严格对照《国家学生体质健康标准》的平板支撑规则（第一版标准化重构）",
+  "landmarks_required": [
+    "left_shoulder",
+    "right_shoulder",
+    "left_elbow",
+    "right_elbow",
+    "left_wrist",
+    "right_wrist",
+    "left_hip",
+    "right_hip",
+    "left_knee",
+    "right_knee",
+    "left_ankle",
+    "right_ankle",
+    "left_foot_index",
+    "right_foot_index"
+  ],
+  "enabled_metrics": [
+    "hip_sag_angle",
+    "hip_raise_angle",
+    "shoulder_forward_angle",
+    "shoulder_backward_angle",
+    "elbow_overflex_angle",
+    "elbow_underextend_angle",
+    "knee_bend_angle",
+    "ankle_plantarflex_angle",
+    "ankle_dorsiflex_angle",
+    "hold_duration"
+  ],
+  "metric_rules": {
+    "hip_sag_angle": {
+      "normal_range": {
+        "min": 170.0,
+        "max": 182.0
+      },
+      "severity_rules": {
+        "mild": [160.0, 170.0],
+        "moderate": [150.0, 160.0],
+        "severe": [0.0, 150.0]
+      }
+    },
+    "hip_raise_angle": {
+      "normal_range": {
+        "min": 170.0,
+        "max": 182.0
+      },
+      "severity_rules": {
+        "mild": [182.0, 190.0],
+        "moderate": [190.0, 200.0],
+        "severe": [200.0, 360.0]
+      }
+    },
+    "shoulder_forward_angle": {
+      "normal_range": {
+        "min": 85.0,
+        "max": 95.0
+      },
+      "severity_rules": {
+        "mild": [75.0, 85.0],
+        "moderate": [65.0, 75.0],
+        "severe": [0.0, 65.0]
+      }
+    },
+    "shoulder_backward_angle": {
+      "normal_range": {
+        "min": 85.0,
+        "max": 95.0
+      },
+      "severity_rules": {
+        "mild": [95.0, 105.0],
+        "moderate": [105.0, 115.0],
+        "severe": [115.0, 180.0]
+      }
+    },
+    "elbow_overflex_angle": {
+      "normal_range": {
+        "min": 85.0,
+        "max": 95.0
+      },
+      "severity_rules": {
+        "mild": [75.0, 85.0],
+        "moderate": [65.0, 75.0],
+        "severe": [0.0, 65.0]
+      }
+    },
+    "elbow_underextend_angle": {
+      "normal_range": {
+        "min": 85.0,
+        "max": 95.0
+      },
+      "severity_rules": {
+        "mild": [95.0, 105.0],
+        "moderate": [105.0, 115.0],
+        "severe": [115.0, 180.0]
+      }
+    },
+    "knee_bend_angle": {
+      "normal_range": {
+        "min": 175.0,
+        "max": 180.0
+      },
+      "severity_rules": {
+        "mild": [170.0, 175.0],
+        "moderate": [160.0, 170.0],
+        "severe": [0.0, 160.0]
+      }
+    },
+    "ankle_plantarflex_angle": {
+      "normal_range": {
+        "min": 80.0,
+        "max": 90.0
+      },
+      "severity_rules": {
+        "mild": [70.0, 80.0],
+        "moderate": [60.0, 70.0],
+        "severe": [0.0, 60.0]
+      }
+    },
+    "ankle_dorsiflex_angle": {
+      "normal_range": {
+        "min": 80.0,
+        "max": 90.0
+      },
+      "severity_rules": {
+        "mild": [90.0, 100.0],
+        "moderate": [100.0, 110.0],
+        "severe": [110.0, 180.0]
+      }
+    },
+    "hold_duration": {
+      "normal_range": {
+        "min": 10.0,
+        "max": 300.0
+      },
+      "severity_rules": {
+        "mild": [5.0, 10.0],
+        "moderate": [2.0, 5.0],
+        "severe": [0.0, 2.0]
+      }
+    }
+  },
+  "voice_prompts": {
+    "hip_sag_angle": {
+      "mild": "腰部轻微下沉，请收紧核心",
+      "moderate": "腰部明显下沉，请向上顶腰",
+      "severe": "腰部严重下沉，立即停止！"
+    },
+    "hip_raise_angle": {
+      "mild": "臀部轻微上翘，请放平身体",
+      "moderate": "臀部明显抬高，请降低臀部",
+      "severe": "臀部过高，动作无效！"
+    },
+    "shoulder_forward_angle": {
+      "mild": "肩膀略微靠前，请调整手肘位置",
+      "moderate": "肩膀过于靠前，请将手肘放在肩膀正下方",
+      "severe": "肩部位置严重错误，立即调整！"
+    },
+    "shoulder_backward_angle": {
+      "mild": "肩膀略微靠后，请调整手肘位置",
+      "moderate": "肩膀过于靠后，请将手肘放在肩膀正下方",
+      "severe": "肩部位置严重错误，立即调整！"
+    },
+    "elbow_overflex_angle": {
+      "mild": "肘部略微弯曲过度，请调整手臂角度",
+      "moderate": "肘部弯曲过多，请保持接近直角",
+      "severe": "肘部角度严重错误，立即调整！"
+    },
+    "elbow_underextend_angle": {
+      "mild": "肘部略微伸直过度，请调整手臂角度",
+      "moderate": "肘部过于伸直，请保持接近直角",
+      "severe": "肘部角度严重错误，立即调整！"
+    },
+    "knee_bend_angle": {
+      "mild": "膝盖轻微弯曲，请伸直双腿",
+      "moderate": "膝盖明显弯曲，请用力伸直",
+      "severe": "膝盖严重弯曲，立即调整！"
+    },
+    "ankle_plantarflex_angle": {
+      "mild": "脚尖略微踮起，请踩平脚掌",
+      "moderate": "脚尖踮起过高，请放平脚部",
+      "severe": "脚部姿势严重错误，立即调整！"
+    },
+    "ankle_dorsiflex_angle": {
+      "mild": "脚掌略微外撇，请脚尖朝前",
+      "moderate": "脚掌外撇过多，请调整脚部方向",
+      "severe": "脚部姿势严重错误，立即调整！"
+    },
+    "hold_duration": {
+      "mild": "继续保持，加油！",
+      "moderate": "坚持住！",
+      "severe": "再坚持一下！"
+    }
+  },
+  "timing": {
+    "stable_frames": 3,
+    "voice_cooldown_ms": 2000,
+    "min_hold_ms": 1000
+  },
+  "tags": [
+    "core",
+    "plank",
+    "student_fitness",
+    "national_standard"
+  ],
+  "extras": {
+    "future_metrics": [
+      "neck_flexion_angle",
+      "lumbar_curvature",
+      "body_symmetry_score",
+      "overall_quality_score"
+    ]
+  }
+}
